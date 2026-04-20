@@ -1,2 +1,0 @@
-import sae
-print('ok')
