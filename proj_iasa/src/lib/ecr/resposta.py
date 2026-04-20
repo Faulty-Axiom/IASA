@@ -12,7 +12,7 @@ class Resposta:
         self._accao = accao
 
     def _obter_accao(self, percepcao: Percepcao) -> Accao:
-        pass
+        return self._accao
 
     '''
     Método que ativa a resposta, ajustando a prioridade da ação de acordo com a intensidade do estímulo

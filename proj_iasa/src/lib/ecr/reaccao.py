@@ -16,7 +16,8 @@ class Reaccao(Comportamento):
         self._resposta = resposta
 
     '''
-    Método que processa a perceção através do estímulo e, caso a intensidade for superior a zero, ativa e devolve a resposta
+    Método que processa a perceção através do estímulo e, 
+    caso a intensidade for superior a zero, ativa e devolve a resposta
     '''
     def activar(self, percepcao: Percepcao) -> Accao:
         intensidade = self._estimulo.detectar(percepcao)
