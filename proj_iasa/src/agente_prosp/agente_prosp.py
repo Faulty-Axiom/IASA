@@ -1,11 +1,14 @@
-from agente.accao import Accao
-from agente.agente import Agente
-from agente.percepcao import Percepcao
+from lib.agente.accao import Accao
+from lib.agente.agente import Agente
+from lib.agente.percepcao import Percepcao
 
-
+'''
+Classe que implementa o agente prospetor responsável por interagir com o ambiente de simulação
+'''
 class AgenteProsp(Agente):
-    def _percepcionar() -> Percepcao:
+    
+    def _percepcionar(self) -> Percepcao:
         pass
         
-    def _actuar(accao: Accao):
+    def _actuar(self, accao: Accao):
         pass

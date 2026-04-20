@@ -1,6 +1,7 @@
 from lib.agente.percepcao import Percepcao
 from lib.ecr.estimulo import Estimulo
 from sae import Direccao
+from sae import Elemento
 
 '''
 Classe que define o estímulo para detetar um alvo numa direção específica
@@ -17,4 +18,9 @@ class EstimuloAlvo(Estimulo):
     Método que calcula e retorna a intensidade do estímulo com base na perceção atual
     '''
     def detectar(self, percepcao: Percepcao) -> float:
-        pass
+        elemento, distancia, posicao = percepcao[self._direccao]
+        
+        if elemento == Elemento.ALVO:
+            return self._gama ** distancia
+            
+        return 0.0

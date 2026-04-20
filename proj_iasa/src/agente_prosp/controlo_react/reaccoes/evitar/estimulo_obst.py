@@ -11,4 +11,7 @@ class EstimuloObst(Estimulo):
     Método que calcula a intensidade do estímulo com base na deteção de um obstáculo na perceção
     '''
     def detectar(self, percepcao: Percepcao) -> float:
-        pass
+        if percepcao.contacto_obst():
+            return self.INTENS_OBST
+            
+        return 0.0
