@@ -1,0 +1,2 @@
+import sae
+print('ok')
